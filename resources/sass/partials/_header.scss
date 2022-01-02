@@ -18,12 +18,17 @@ nav {
         font-size: 14px;
         width: 240px;
         align-items: center;
-        a {
+        span {
             color: white;
+            text-transform: uppercase;
             &.start {
                 border: 1px solid white;
                 padding: 0.5rem;
                 border-radius: 50px;
+                &:hover {
+                    background-color: white;
+                    color: rgb(0, 178, 238);
+                }
             }
         }
         .search {

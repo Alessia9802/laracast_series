@@ -48,8 +48,8 @@
                      <div class="search">
                         <img class="search_icon" src="{{asset('img/search_icon.svg')}}" alt="">
                      </div>
-                     <a href="#">Sign in</a>
-                     <a class="start" href="#">Get started</a>
+                     <span href="#">Sign in</span>
+                     <span class="start" href="#">Get started</span>
                   </div>
            </div>
     </nav>

@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 nav {
   height: 60px;
   padding: 0.63rem 1.5rem;
@@ -22,13 +26,18 @@ nav .nav_menu {
   width: 240px;
   align-items: center;
 }
-nav .nav_menu a {
+nav .nav_menu span {
   color: white;
+  text-transform: uppercase;
 }
-nav .nav_menu a.start {
+nav .nav_menu span.start {
   border: 1px solid white;
   padding: 0.5rem;
   border-radius: 50px;
+}
+nav .nav_menu span.start:hover {
+  background-color: white;
+  color: #00b2ee;
 }
 nav .nav_menu .search {
   width: 40px;
@@ -85,4 +94,96 @@ nav a.larabits span {
   top: -7px;
   color: black;
   text-transform: none;
+}
+
+.app_section {
+  background-color: #eeeef4;
+}
+.app_section h3 {
+  font-family: "Cabin", sans-serif;
+  letter-spacing: 0.02rem;
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 3rem;
+}
+.app_section p {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  font-size: 18px;
+}
+.app_section .mobile {
+  margin: auto;
+  width: 1200px;
+  height: 380px;
+  border-radius: 20px;
+  background-color: white;
+  background-image: url("../img/mobile-apps-with-react-native.svg");
+  border: 1px solid rgba(160, 184, 196, 0.33);
+  background-repeat: no-repeat;
+  background-size: 550px;
+  background-position: center;
+  background-position-x: 900px;
+  padding-left: 3rem;
+  padding-top: 2rem;
+}
+.app_section .mobile .frame {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #ec454f;
+  font-size: 10px;
+  width: 120px;
+  padding: 0.4rem;
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+  margin-bottom: 1rem;
+}
+.app_section .mobile h2 {
+  font-family: "Cabin", sans-serif;
+  letter-spacing: 0.02rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.app_section .mobile p {
+  color: #606f7b;
+  text-align: left;
+  width: 700px;
+  font-size: 16px;
+  margin-bottom: 2rem;
+}
+.app_section .mobile .symbols {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  margin-bottom: 1.5rem;
+}
+.app_section .mobile .symbols .item {
+  display: flex;
+  padding-right: 1rem;
+  color: #7e7e7e;
+}
+.app_section .mobile .symbols .items {
+  width: 23px;
+  padding-right: 0.5rem;
+  color: #b1b5c5;
+}
+.app_section .mobile .play_series {
+  font-family: "Poppins", sans-serif;
+  border-radius: 30px;
+  padding: 0.5rem;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  background-color: rgba(156, 156, 156, 0.19);
+}
+.app_section .mobile .play {
+  width: 16px;
+  margin-right: 5px;
 }
