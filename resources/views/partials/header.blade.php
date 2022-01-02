@@ -33,14 +33,23 @@
     <nav>
            <div class="container">
                   <div class="logo">
-
+                  <img class="site_logo" src="{{asset('img/negative-logo.svg')}}" alt="">
                   </div>
                   <div class="main_menu">
                          <ul>
-                                @foreach($menu as $item)
-                                <li><a href="{{$item['href']}}">{{$item['text']}}</a></li>
-                                @endforeach
+                                <li><a href="{{ route('topics') }}">Topics</a></li>
+                                <li><a href="{{ route('series') }}">Series</a></li>
+                                <li><a class="larabits" href="{{ route('larabits') }}">Larabits <span>New!</span></a></li>
+                                <li><a href="{{ route('discussions') }}">Discussions</a></li>
+                                <li><a href="{{ route('podcast') }}">Podcast</a></li>
                          </ul>
+                  </div>
+                  <div class="nav_menu">
+                     <div class="search">
+                        <img class="search_icon" src="{{asset('img/search_icon.svg')}}" alt="">
+                     </div>
+                     <a href="#">Sign in</a>
+                     <a class="start" href="#">Get started</a>
                   </div>
            </div>
     </nav>

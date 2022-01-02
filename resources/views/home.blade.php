@@ -2,6 +2,6 @@
 
 @section('content')
 
-<h1>Laracast</h1>
+<!-- <h1>Laracast</h1> -->
 
 @endsection
