@@ -7,3 +7,17 @@
 body {
     font-family: "Open Sans", sans-serif;
 }
+
+@keyframes heart-pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

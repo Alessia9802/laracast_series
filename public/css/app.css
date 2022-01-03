@@ -8,6 +8,29 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+@-webkit-keyframes heart-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes heart-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 nav {
   height: 60px;
   padding: 0.63rem 1.5rem;
@@ -94,6 +117,153 @@ nav a.larabits span {
   top: -7px;
   color: black;
   text-transform: none;
+}
+
+.footer_wrap {
+  height: 700px;
+  background-image: radial-gradient(circle at 1% 1%, #328bf2, #1644ad);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  overflow: hidden;
+  position: relative;
+}
+.footer_wrap .footer_image {
+  background-image: url("../img/footer-gang.svg");
+  position: relative;
+  margin-left: 600px;
+  height: 700px;
+  background-repeat: no-repeat;
+}
+.footer_wrap .footer_image .drop {
+  width: 180px;
+  height: 190px;
+  margin-left: -240px;
+  position: relative;
+}
+.footer_wrap .text_wrap {
+  text-align: center;
+  color: white;
+  width: 700px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  margin-left: 25rem;
+}
+.footer_wrap .text_wrap h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  letter-spacing: -0.09rem;
+  margin-top: 80px;
+}
+.footer_wrap .text_wrap .mail {
+  margin-top: 50px;
+}
+.footer_wrap .text_wrap .mail input {
+  font-family: "Poppins", sans-serif;
+  width: 350px;
+  border-radius: 20px;
+  border: none;
+  padding: 0.7rem;
+  position: relative;
+  margin-left: -5rem;
+}
+.footer_wrap .text_wrap .mail button {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  padding: 0.7rem;
+  border-radius: 20px;
+  border: none;
+  width: 130px;
+  color: white;
+  background-color: #3b82f6;
+  position: absolute;
+  margin-left: -50px;
+  font-weight: 600;
+}
+.footer_wrap .cont_footer {
+  width: 100%;
+  position: absolute;
+  height: 300px;
+  padding-left: 160px;
+  padding-right: 150px;
+  /* background-color: rgb(255 0 0); */
+  top: 320px;
+  display: flex;
+  justify-content: center;
+}
+.footer_wrap .cont_footer .footer_info {
+  width: 40%;
+  color: white;
+  padding-right: 1rem;
+  top: 0;
+}
+.footer_wrap .cont_footer .footer_info .logo_footer {
+  margin-bottom: 1rem;
+}
+.footer_wrap .cont_footer .footer_info p {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1rem;
+}
+.footer_wrap .cont_footer .footer_info .social {
+  filter: invert(1);
+}
+.footer_wrap .cont_footer .footer_info .social img {
+  width: 40px;
+  padding-left: 0.5rem;
+}
+.footer_wrap .cont_footer .menu_footer {
+  font-family: "Poppins", sans-serif;
+  padding-left: 80px;
+  width: 60%;
+  top: 0;
+  display: flex;
+}
+.footer_wrap .cont_footer .menu_footer .menu_section {
+  padding-right: 100px;
+}
+.footer_wrap .cont_footer .menu_footer .menu_section p {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  padding-bottom: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+}
+.footer_wrap .cont_footer .menu_footer .menu_section ul {
+  list-style: none;
+}
+.footer_wrap .cont_footer .menu_footer .menu_section ul a {
+  text-decoration: none;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.315);
+}
+.footer_wrap .cont_footer .menu_footer .menu_section ul a:hover {
+  color: white;
+}
+.footer_wrap .copyright {
+  position: absolute;
+  padding: 1rem;
+  margin: auto;
+  width: 80%;
+  height: 100px;
+  top: 600px;
+  margin-left: 10%;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer_wrap .copyright p {
+  font-family: "Poppins", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  text-align: center;
+  line-height: 25px;
+}
+.footer_wrap .copyright p .heart {
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  -webkit-animation: heart-pulse 1s infinite;
+          animation: heart-pulse 1s infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
 .app_section {
