@@ -73,8 +73,12 @@ nav .nav_menu .search .search_icon {
   filter: invert(1);
   width: 20px;
 }
+nav .home:hover::after {
+  content: none;
+  height: 0;
+}
 nav .site_logo {
-  width: 150px;
+  width: 160px;
 }
 nav ul {
   display: flex;
@@ -268,6 +272,7 @@ nav a.larabits span {
 
 .app_section {
   background-color: #eeeef4;
+  padding-bottom: 50px;
 }
 .app_section h3 {
   font-family: "Cabin", sans-serif;
@@ -356,4 +361,7 @@ nav a.larabits span {
 .app_section .mobile .play {
   width: 16px;
   margin-right: 5px;
+}
+.app_section .mg-top {
+  margin-top: 2rem;
 }

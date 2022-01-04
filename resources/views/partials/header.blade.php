@@ -33,7 +33,8 @@
     <nav>
            <div class="container">
                   <div class="logo">
-                  <img class="site_logo" src="{{asset('img/negative-logo.svg')}}" alt="">
+                     <a class="home" href="{{ route('home') }}"><img class="site_logo" src="{{asset('img/negative-logo.svg')}}" alt=""></a>
+                  
                   </div>
                   <div class="main_menu">
                          <ul>

@@ -22,8 +22,14 @@ Route::get('/topics', function () {
 })->name('topics');
 
 Route::get('/series', function () {
-    return view('series');
+    return view('series.index');
 })->name('series');
+
+Route::get('series/{id}', function ($id) {
+      $serie = [$id];
+    /* ddd($serie);  */ 
+    return view('series.show', compact('serie'));
+})->name('serie');
 
 Route::get('/larabits', function () {
     return view('larabits');

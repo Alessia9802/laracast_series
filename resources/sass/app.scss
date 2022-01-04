@@ -6,6 +6,7 @@
 
 .app_section {
     background-color: rgb(238 238 244);
+    padding-bottom: 50px;
     h3 {
         font-family: "Cabin", sans-serif;
         letter-spacing: 0.02rem;
@@ -93,5 +94,8 @@
             width: 16px;
             margin-right: 5px;
         }
+    }
+    .mg-top {
+        margin-top: 2rem;
     }
 }

@@ -11,6 +11,7 @@ nav {
         justify-content: space-between;
         align-items: center;
     }
+
     .nav_menu {
         color: white;
         display: flex;
@@ -43,9 +44,15 @@ nav {
             }
         }
     }
+    .home {
+        &:hover::after {
+            content: none;
+            height: 0;
+        }
+    }
 
     .site_logo {
-        width: 150px;
+        width: 160px;
     }
     ul {
         display: flex;
