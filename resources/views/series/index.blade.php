@@ -183,14 +183,89 @@
                         </div>
                 </div>
             </div>
-            </div>
+    </div>
             
-                
+    <div class="mg_top_trend">
+            <h3>Trending Series</h3>
+            <p>Here's what's your peers are binging.</p>
+            <div class="cont_trend_series">
+                <img class="wall_trend" src="{{asset('img/lary-trending.svg')}}" alt="">
+                <div class="card_items">
+                    <div class="card_item">
+                     <div class="square">
+                         <img class="trend_series" src="{{asset('img/laravel-from-scratch-2021.svg')}}" alt="">
+                     </div>
+                     <div class="text">
+                         <h5>Laravel 8 from Scratch</h5>
+                        <p class="desc_serie">We don't learn tools for the sake of learning tools. Instead, we learn them because they help us...</p>
+                     </div>
+                        
+                   </div>
+                   <div class="card_item">
+                     <div class="square">
+                         <img class="trend_series" src="{{asset('img/learning-vue-2-step-by-step.png')}}" alt="">
+                     </div>
+                     <div class="text">
+                         <h5>Learn Vue 2: Step by Step</h5>
+                        <p class="desc_serie">Vue is easily one of the most exciting additions to the front-end world in many years. With its intuitive...</p>
+                     </div>
+                        
+                   </div>
+                </div>
+                <div class="card_items">
+                    <div class="card_item">
+                     <div class="square">
+                         <img class="trend_series" src="{{asset('img/modern-laravel-apps-using-inertia (1).png')}}" alt="">
+                     </div>
+                        <div class="text">
+                            <h5>Build Modern Laravel Apps Using...</h5>
+                           <p class="desc_serie">Inertia.js, created by Jonathan Reinink, is an incredible tool that glues a server-side framework,...</p>
+                        </div>
+                        
+                   </div>
+                   <div class="card_item">
+                     <div class="square">
+                         <img class="trend_series" src="{{asset('img/the-php-practitioner.png')}}" alt="">
+                     </div>
+                        <div class="text">
+                            <h5>The PHP Pratictioner</h5>
+                           <p class="desc_serie">We all start somewhere. When it comes to web development with PHP, well, your first stop is this...</p>
+                        </div>
+                        
+                   </div>
+                </div>
+                <div class="card_items">
+                    <div class="card_item">
+                     <div class="square">
+                         <img class="trend_series" src="{{asset('img/laravel-6-from-scratch.png')}}" alt="">
+                     </div>
+                     <div class="text">
+                         <h5>Laravel 6 from Scratch</h5>
+                        <p class="desc_serie">In this series, step by step, I'll show you how to build web applications with Laravel. We'll start with the...</p>
+                     </div>
+                        
+                   </div>
+                   <div class="card_item">
+                     <div class="square">
+                         <img class="trend_series" src="{{asset('img/andrews-larabits.jpg')}}" alt="">
+                     </div>
+                        <div class="text">
+                            <h5>Andrew's Larabits</h5>
+                           <p class="desc_serie">Here, you'll find Andrew Schmelyun's personal collection of Larabits. If you're unfamiliar, Larabits...</p>
+                        </div>
+                        
+                   </div>
+                </div>
+            </div>
+    </div>   
             
         </div>
         
+    
+    
     </div>
 
+   
 </div>
 
 @endsection
