@@ -54,6 +54,14 @@
             letter-spacing: 0.02rem;
             font-weight: 500;
             font-size: 1.5rem;
+            a {
+                text-decoration: none;
+                color: black;
+                &:hover {
+                    text-decoration: underline;
+                    color: black;
+                }
+            }
         }
         p {
             color: rgb(96, 111, 123);
@@ -97,5 +105,182 @@
     }
     .mg-top {
         margin-top: 2rem;
+        .tool {
+            margin: auto;
+            width: 1200px;
+            height: 380px;
+            border-radius: 20px;
+            background-color: rgb(255 255 255);
+            background-image: url("../img/graphql-with-laravel-and-vue.svg");
+            border: 1px solid rgb(160 184 196 / 33%);
+            background-repeat: no-repeat;
+            background-size: 550px;
+            background-position: center;
+            background-position-x: 900px;
+            padding-left: 3rem;
+            padding-top: 2rem;
+            .frame {
+                font-family: "Poppins", sans-serif;
+                font-weight: 700;
+                text-transform: uppercase;
+                background-color: rgb(139, 96, 237);
+                font-size: 10px;
+                width: 90px;
+                padding: 0.4rem;
+                text-align: center;
+                border-radius: 20px;
+                color: rgb(255 255 255);
+                margin-bottom: 1rem;
+            }
+            h2 {
+                font-family: "Cabin", sans-serif;
+                letter-spacing: 0.02rem;
+                font-weight: 500;
+                font-size: 1.5rem;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    &:hover {
+                        text-decoration: underline;
+                        color: black;
+                    }
+                }
+            }
+            p {
+                color: rgb(96, 111, 123);
+                text-align: left;
+                width: 700px;
+                font-size: 16px;
+                margin-bottom: 2rem;
+            }
+            .symbols {
+                display: flex;
+                align-items: center;
+                font-family: "Poppins", sans-serif;
+                font-size: 10px;
+                margin-bottom: 1.5rem;
+                .item {
+                    display: flex;
+                    padding-right: 1rem;
+                    color: #7e7e7e;
+                }
+                .items {
+                    width: 23px;
+                    padding-right: 0.5rem;
+                    color: #b1b5c5;
+                }
+            }
+            .play_series {
+                font-family: "Poppins", sans-serif;
+                border-radius: 30px;
+                padding: 0.5rem;
+                font-size: 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 200px;
+                background-color: rgb(156 156 156 / 19%);
+            }
+            .play {
+                width: 16px;
+                margin-right: 5px;
+            }
+        }
+    }
+    .mg_top_series {
+        margin-top: 2rem;
+        .cont_recently_series {
+            padding-right: 1.5rem;
+            background-image: linear-gradient(
+                90deg,
+                rgb(50 68 102),
+                rgb(96 121 158) 79%
+            );
+            width: 1200px;
+            height: 550px;
+            border-radius: 20px;
+            margin: auto;
+            color: white;
+            p {
+                font-family: "Cabin", sans-serif;
+            }
+            .cards {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 1.5rem;
+                .card {
+                    padding: 0.5rem;
+                    width: 300px;
+                    height: 200px;
+                    border-radius: 20px;
+                    margin-left: 1.5rem;
+                    text-align: center;
+                    background-color: rgb(0 0 0 / 3%);
+                    .start_series {
+                        font-family: "Poppins", sans-serif;
+                        display: none;
+                        font-weight: 600;
+                        border-radius: 30px;
+                        padding: 0.2rem;
+                        font-size: 14px;
+                        width: 160px;
+                        margin-top: 1rem;
+                        margin-left: 18px;
+                        border: 1px solid rgb(255 255 255 / 10%);
+                        background-color: rgb(156 156 156 / 19%);
+                        &:hover {
+                            background-color: white;
+                            color: rgb(4, 142, 255);
+                            border: 1px solid rgb(4, 142, 255);
+                        }
+                    }
+                    &:hover {
+                        background-color: rgb(0 0 0 / 10%);
+                        transition: 0.3s;
+                        .desc_serie {
+                            display: none;
+                            transition: 0.3s;
+                        }
+                        .start_series {
+                            display: block;
+                            transition: 0.3s;
+                            cursor: pointer;
+                        }
+                    }
+                    .circle {
+                        width: 74px;
+                        height: 74px;
+                        background-color: rgb(0 0 0 / 12%);
+                        border-radius: 50%;
+                        margin-left: 30%;
+                        position: relative;
+                    }
+                    .rc_series {
+                        width: 66px;
+                        height: 66px;
+                        position: absolute;
+                        top: 0.25rem;
+                        left: 0.25rem;
+                    }
+                    .title_serie {
+                        font-size: 15px;
+                        padding: 0.3rem;
+                    }
+                    .date_serie {
+                        opacity: 0.5;
+                        font-size: 0.666rem;
+                        padding: 0.2rem;
+                    }
+                    .desc_serie {
+                        opacity: 0.5;
+                        max-width: 30em;
+                        padding: 0.5rem;
+                        text-align: left;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
     }
 }
