@@ -590,14 +590,14 @@
         </div>
     </div>
 
-    <div class="mg_top_violet">
+    <div class="mg_top_yellow">
         <div class="cont_cards">
             <div class="card_one">
                 <div class="card_one_wrap">
                     <div class="label_card">
                         <p>Tooling</p>
                     </div>
-                    <img class="circle_item" src="{{asset('img/professional-php-workflow-in-sublime-text.png')}}" alt="">
+                    <img class="circle_item" src="{{asset('img/learn-redis-through-examples.png')}}" alt="">
                    <div class="livel_series">
                        <h6>Intermediate <br> Difficulty</h6>
                        <div class="livel_grade">
@@ -608,16 +608,16 @@
                    </div>
                 </div>
                 <div class="card_left">
-                    <h3 class="title_h3">Professional PHP Workflow in Sublime Text 3</h3>
-                    <p>This series is exclusively for the working developer who, though familiar with Sublime Text,...</p>
+                    <h3 class="title_h3">Learn Redis Through Examples</h3>
+                    <p>You've probably known for a while now that Redis is a thing. But, like so many others, maybe you've had trouble understanding exactly when...</p>
                     <div class="symbols">
                      <div class="item">
                        <img class="items" src="{{asset('img/item-01.svg')}}" alt="">
-                         <div>11 lessons</div>
+                         <div>7 lessons</div>
                      </div>
                          <div class="item">
                                 <img class="items" src="{{asset('img/item-03.svg')}}" alt="">
-                                <div>41m</div>
+                                <div>1h 14m</div>
                         </div>
                     </div>
                    <div class="play_series">
@@ -629,9 +629,9 @@
             <div class="card_two">
                 <div class="card_two_wrap">
                     <div class="label_card">
-                        <p>Tooling</p>
+                        <p>Languages</p>
                     </div>
-                    <img class="circle_item" src="{{asset('img/be-awesome-in-phpstorm.png')}}" alt="">
+                    <img class="circle_item" src="{{asset('img/learn-flexbox-through-examples.png')}}" alt="">
                    <div class="livel_series">
                        <h6>Intermediate <br> Difficulty</h6>
                        <div class="livel_grade">
@@ -642,16 +642,16 @@
                    </div>
                 </div>
                 <div class="card_left">
-                    <h3 class="title_h3">Be Awesome in PHPStorm</h3>
-                    <p>Think about how many hours each week you spend within your editor. Doesn't it make sense to unlock every inch of its capabilities?...</p>
+                    <h3 class="title_h3">Learn Flexbox Through Examples</h3>
+                    <p>Flexbox is easily one of the most important additions to CSS in the last decade. The only problem is that there's a bit of a learning curve. Trust me,...</p>
                     <div class="symbols">
                      <div class="item">
                        <img class="items" src="{{asset('img/item-01.svg')}}" alt="">
-                         <div>27 lessons</div>
+                         <div>8 lessons</div>
                      </div>
                          <div class="item">
                                 <img class="items" src="{{asset('img/item-03.svg')}}" alt="">
-                                <div>1h 30m</div>
+                                <div>1h 12m</div>
                         </div>
                     </div>
                    <div class="play_series">
@@ -667,7 +667,7 @@
                       <div class="label_card">
                         <p>Tooling</p>
                      </div>
-                    <img class="circle_item" src="{{asset('img/vim-mastery.png')}}" alt="">
+                    <img class="circle_item" src="{{asset('img/webpack-for-everyone.png')}}" alt="">
                    <div class="livel_series">
                        <h6>Intermediate <br> Difficulty</h6>
                        <div class="livel_grade">
@@ -678,16 +678,16 @@
                    </div>
                 </div>
                 <div class="card_left">
-                    <h3 class="title_h3">Vim Mastery</h3>
-                    <p>There's a reason why, after decades, countless developers still prefer Vim as their code editor of choice. That many people can't be wrong, right? I...</p>
+                    <h3 class="title_h3">Webpack for Everyone</h3>
+                    <p>Webpack is a wonderful tool for bundling front-end assets. Having said that, it can sometimes be a bit confusing to newcomers who switch over...</p>
                     <div class="symbols">
                      <div class="item">
                        <img class="items" src="{{asset('img/item-01.svg')}}" alt="">
-                         <div>22 lessons</div>
+                         <div>14 lessons</div>
                      </div>
                          <div class="item">
                                 <img class="items" src="{{asset('img/item-03.svg')}}" alt="">
-                                <div>2h 37m</div>
+                                <div>1h 19m</div>
                         </div>
                     </div>
                    <div class="play_series">
@@ -698,6 +698,69 @@
                 
             </div>
         </div>
+    </div>
+
+    <div class="mg_top_forget">
+        <div class="cont_recently_series">
+            <p>Don't forget about these</p>
+            <div class="cards">
+                <div class="card">
+                     <div class="circle">
+                         <img class="rc_series" src="{{asset('img/charting-and-you.png')}}" alt="">
+                     </div>
+                        <p class="title_serie">Charting and You</p>
+                        <p class="date_serie">March 16, 2021</p>
+                        <p class="desc_serie">At some point, you'll be called upon to prepare a series of graphs, or charts for your business. It's...</p>
+                        <div class="start_series">
+                                <span>Start series</span>
+                        </div>
+                    </div>
+                <div class="card">
+                    <div class="circle">
+                         <img class="rc_series" src="{{asset('img/vim-mastery.png')}}" alt="">
+                     </div>
+                        <p class="title_serie">Vim Mastery...</p>
+                        <p class="date_serie">January 26, 2016</p>
+                        <p class="desc_serie">There's a reason why, after decades, countless developers still prefer Vim as their code editor of...</p>
+                        <div class="start_series">
+                                <span>Start series</span>
+                        </div>
+                </div>
+                <div class="card">
+                    <div class="circle">
+                         <img class="rc_series" src="{{asset('img/git-me-some-version-control.png')}}" alt="">
+                     </div>
+                        <p class="title_serie">Git Me Some Version Control</p>
+                        <p class="date_serie">July 13, 2015</p>
+                        <p class="desc_serie">Version Control can be a mysterious thing at first. Why exactly do I need this?? Before...</p>
+                        <div class="start_series">
+                                <span>Start series</span>
+                        </div>
+                </div>
+                <div class="card">
+                    <div class="circle">
+                         <img class="rc_series" src="{{asset('img/envoyer.png')}}" alt="">
+                     </div>
+                        <p class="title_serie">Envoyer</p>
+                        <p class="date_serie">March 15, 2015</p>
+                        <p class="desc_serie">Envoyer deploys your PHP applications with zero downtime. Just push your code, and let...</p>
+                        <div class="start_series">
+                                <span>Start series</span>
+                        </div>
+                </div>
+                <div class="card">
+                    <div class="circle">
+                         <img class="rc_series" src="{{asset('img/understand-regular-expressions.png')}}" alt="">
+                     </div>
+                        <p class="title_serie">Understand Regular...</p>
+                        <p class="date_serie">July 17, 2014</p>
+                        <p class="desc_serie">Does the thought of a confusing regular expression send chills down your back? Don't worry...</p>
+                        <div class="start_series">
+                                <span>Start series</span>
+                        </div>
+                </div>
+            </div>
+                
     </div>
     
     <!-- double card -->
@@ -864,67 +927,84 @@
         </div>
     </div>
 
-    <div class="mg_top_forget">
-        <div class="cont_recently_series">
-            <p>Don't forget about these</p>
-            <div class="cards">
-                <div class="card">
-                     <div class="circle">
-                         <img class="rc_series" src="{{asset('img/inertia-and-spa-techniques.png')}}" alt="">
-                     </div>
-                        <p class="title_serie">Inertia and SPA Techniques</p>
-                        <p class="date_serie">Dicember 14, 2021</p>
-                        <p class="desc_serie">So you've mastered the basics of building an SPA with Laravel and Inertia? Nice work, but of course...</p>
-                        <div class="start_series">
-                                <span>Start series</span>
-                        </div>
-                    </div>
-                <div class="card">
-                    <div class="circle">
-                         <img class="rc_series" src="{{asset('img/modern-laravel-apps-using-inertia (1).png')}}" alt="">
-                     </div>
-                        <p class="title_serie">Build Modern Laravel Apps...</p>
-                        <p class="date_serie">November 15, 2021</p>
-                        <p class="desc_serie">Inertia.js, created by Jonathan Reinink, is an incredible tool that glues a server-side framework, lik...</p>
-                        <div class="start_series">
-                                <span>Start series</span>
-                        </div>
+    <div class="mg_top_laravel">
+            <h3>What's New in Laravel?</h3>
+            <p>Don't fall behind on the latest and greatest that Laravel has to offer. Learn the key features of each new point release.</p>
+            <div class="cont_test_series">
+                <div class="wall_machine">
+                    <img class="wall_test" src="{{asset('img/journey-frameworks.svg')}}" alt="">
                 </div>
-                <div class="card">
-                    <div class="circle">
-                         <img class="rc_series" src="{{asset('img/learn-docker.png')}}" alt="">
+                
+             <div class="cont_items">
+                     <div class="card_items">
+                    <div class="card_item">
+                     <div class="square">
+                         <img class="trend_series" src="{{asset('img/whats-new-in-laravel-5.4.png')}}" alt="">
                      </div>
-                        <p class="title_serie">The Docker Tutorial</p>
-                        <p class="date_serie">October 13, 2021</p>
-                        <p class="desc_serie">Docker makes development and deployment much easier, since it removes the need for installing...</p>
-                        <div class="start_series">
-                                <span>Start series</span>
-                        </div>
+                     <div class="text">
+                         <h5>What's New in Laravel 5.6</h5>
+                        <p class="desc_serie">Laravel 5.6 is upon us! While it's true that this release isn't quite as flashy, there are still a...</p>
+                     </div>
+                        
+                   </div>
+                   <div class="card_item">
+                     <div class="square">
+                         <img class="trend_series" src="{{asset('img/whats-new-in-laravel-6.png')}}" alt="">
+                     </div>
+                     <div class="text">
+                         <h5>What's New in Laravel 6</h5>
+                        <p class="desc_serie">Laravel 6 is here! Along with a fresh website design comes a variety of new features and improvements, including lazy collections, Laravel Vapor compatibility, job middleware, and...</p>
+                     </div>
+                        
+                   </div>
                 </div>
-                <div class="card">
-                    <div class="circle">
-                         <img class="rc_series" src="{{asset('img/testing-jargon-2.png')}}" alt="">
+                <div class="card_items">
+                    <div class="card_item">
+                     <div class="square">
+                         <img class="trend_series" src="{{asset('img/whats-new-in-laravel-5.4.png')}}" alt="">
                      </div>
-                        <p class="title_serie">PHP Testing Jargon</p>
-                        <p class="date_serie">September 15, 2021</p>
-                        <p class="desc_serie">There's no two ways about it: terminology in the testing world is incredibly overwhelming. Mocks...</p>
-                        <div class="start_series">
-                                <span>Start series</span>
+                        <div class="text">
+                            <h5>What's New in Laravel 5.7</h5>
+                           <p class="desc_serie">Laravel 5.7 is now available! Along with it comes, not just the reveal of Laravel Nova, bu...</p>
                         </div>
+                        
+                   </div>
+                   <div class="card_item">
+                     <div class="square">
+                         <img class="trend_series" src="{{asset('img/whats-new-in-laravel-6.png')}}" alt="">
+                     </div>
+                        <div class="text">
+                            <h5>What's New in Laravel 7</h5>
+                           <p class="desc_serie">Laravel advances to version 7 on March 3rd, 2020 with updates to Blade components,...</p>
+                        </div>
+                        
+                   </div>
                 </div>
-                <div class="card">
-                    <div class="circle">
-                         <img class="rc_series" src="{{asset('img/learn-headless-ui.png')}}" alt="">
+                <div class="card_items">
+                    <div class="card_item">
+                     <div class="square">
+                         <img class="trend_series" src="{{asset('img/whats-new-in-laravel-5.4.png')}}" alt="">
                      </div>
-                        <p class="title_serie">Learn Headless UI</p>
-                        <p class="date_serie">September 4, 2021</p>
-                        <p class="desc_serie">Headless UI is a library that provides completely unstyled accessible UI components. Or in...</p>
-                        <div class="start_series">
-                                <span>Start series</span>
+                     <div class="text">
+                         <h5>What's New in Laravel 5.8</h5>
+                        <p class="desc_serie">Laravel 5.8, which released on February 26th, 2019, ships with a new Eloquent relationship,...</p>
+                     </div>
+                        
+                   </div>
+                   <div class="card_item">
+                     <div class="square">
+                         <img class="trend_series" src="{{asset('img/whats-new-in-laravel-8.png')}}" alt="">
+                     </div>
+                        <div class="text">
+                            <h5>What's New in Laravel 8</h5>
+                           <p class="desc_serie">Laravel 8 is here! This release includes brand new application scaffolding, class-based...</p>
                         </div>
+                        
+                   </div>
                 </div>
             </div>
-                
+               
+            </div>
     </div>
 
     <div class="mg_top_test">
@@ -1007,6 +1087,63 @@
             </div>
     </div>
 
+    <div class="mg_top_current">
+        <h3>Currently Featured</h3>
+        <p class="desc_current">Here's what we are currently excited about at Laracasts.</p>
+        <div class="cont_current">
+            <p class="frame">Frameworks</p>
+        <h2><a href="{{ route('serie', ['id' => 1]) }}">Blade Component Cookbook</a></h2>
+        <p>As part of the Laravel 7 release, we gained access to supercharged Blade components. What's exciting about this is the fact that it can fundamentally change how you go about constructing the view layer of your applications. In this series, one...</p>
+        <div class="symbols">
+            <div class="item">
+                <img class="items" src="{{asset('img/item-02.svg')}}" alt="">
+                <div>Intermediate <br> Difficulty</div>
+            </div>
+            <div class="item">
+                <img class="items" src="{{asset('img/item-01.svg')}}" alt="">
+                <div>11 lessons</div>
+            </div>
+            <div class="item">
+                <img class="items" src="{{asset('img/item-03.svg')}}" alt="">
+                <div>2h 3m</div>
+            </div>
+        </div>
+        <div class="play_series">
+            <img class="play" src="{{asset('img/item-4.svg')}}" alt="">
+            <span><a href="{{ route('serie', ['id' => 1]) }}">Start series</a></span>
+        </div>
+        </div>
+        
+    </div>
+
+    <div class="mg_top_live">
+        <div class="cont_live">
+            <p class="frame">Frameworks</p>
+        <h2><a href="{{ route('serie', ['id' => 1]) }}">Livewire Basics</a></h2>
+        <p>Livewire has quickly become one of the most popular package for building Laravel applications. It allows you to create dynamic components within PHP, which often results in allowing you to skip the JavaScript layer entirely. 
+In this series, we’ll go over...</p>
+        <div class="symbols">
+            <div class="item">
+                <img class="items" src="{{asset('img/item-02.svg')}}" alt="">
+                <div>Intermediate <br> Difficulty</div>
+            </div>
+            <div class="item">
+                <img class="items" src="{{asset('img/item-01.svg')}}" alt="">
+                <div>14 lessons</div>
+            </div>
+            <div class="item">
+                <img class="items" src="{{asset('img/item-03.svg')}}" alt="">
+                <div>3h 2m</div>
+            </div>
+        </div>
+        <div class="play_series">
+            <img class="play" src="{{asset('img/item-4.svg')}}" alt="">
+            <span><a href="{{ route('serie', ['id' => 1]) }}">Start series</a></span>
+        </div>
+        </div>
+        
+    </div>
+
     <div class="mg_top_topics">
             <h3>Explore Topics</h3>
             <p>Laracasts is categorized into a variety of topics.</p>
@@ -1059,7 +1196,7 @@
                  </div>
                  
                  
-            </div>
+              </div>
             <div class="cards">
                  <div class="card">
                      <div class="circle">
