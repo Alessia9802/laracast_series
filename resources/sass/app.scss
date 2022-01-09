@@ -4,8 +4,10 @@
 
 @import "partials/footer";
 
+@import "partials/show";
+
 .app_section {
-    background-color: rgb(238 238 244);
+    background-color: rgb(238 238 244 / 45%);
     padding-bottom: 50px;
     h3 {
         font-family: "Cabin", sans-serif;
@@ -97,10 +99,26 @@
             align-items: center;
             width: 200px;
             background-color: rgb(156 156 156 / 19%);
-        }
-        .play {
-            width: 16px;
-            margin-right: 5px;
+            .play {
+                width: 16px;
+                margin-right: 5px;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            &:hover {
+                border: 1px solid rgb(0, 162, 255);
+                cursor: pointer;
+
+                .play {
+                    filter: invert(44%) sepia(92%) saturate(2202%)
+                        hue-rotate(176deg) brightness(102%) contrast(104%);
+                }
+                a {
+                    color: rgb(0, 162, 255);
+                }
+            }
         }
     }
     .mg-top {
@@ -180,10 +198,29 @@
                 align-items: center;
                 width: 200px;
                 background-color: rgb(156 156 156 / 19%);
-            }
-            .play {
-                width: 16px;
-                margin-right: 5px;
+                .play {
+                    width: 16px;
+                    margin-right: 5px;
+                }
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+                &:hover {
+                    border: 1px solid rgb(0, 162, 255);
+                    cursor: pointer;
+
+                    .play {
+                        filter: invert(44%) sepia(92%) saturate(2202%)
+                            hue-rotate(176deg) brightness(102%) contrast(104%);
+                    }
+                    a {
+                        color: rgb(0, 162, 255);
+                    }
+                    span {
+                        color: rgb(0, 162, 255);
+                    }
+                }
             }
         }
     }
@@ -283,6 +320,241 @@
             }
         }
     }
+
+    .mg-top_editor {
+        margin-top: 2rem;
+        h3 {
+            font-family: "Cabin", sans-serif;
+            letter-spacing: 0.02rem;
+        }
+        .text_imp {
+            font-family: "Poppins", sans-serif;
+            max-width: 650px;
+            text-align: center;
+            margin: auto;
+        }
+        .tool {
+            margin: auto;
+            width: 1200px;
+            height: 380px;
+            border-radius: 20px;
+            background-color: rgb(255 255 255);
+            background-image: url("../img/visual-studio-code-for-php-developers.svg");
+            border: 1px solid rgb(160 184 196 / 33%);
+            background-repeat: no-repeat;
+            background-size: 550px;
+            background-position: center;
+            background-position-x: 900px;
+            padding-left: 3rem;
+            padding-top: 2rem;
+            .descrip {
+                margin: 0;
+            }
+            .frame {
+                font-family: "Poppins", sans-serif;
+                font-weight: 700;
+                text-transform: uppercase;
+                background-color: rgb(139, 96, 237);
+                font-size: 10px;
+                width: 90px;
+                padding: 0.4rem;
+                text-align: center;
+                border-radius: 20px;
+                color: rgb(255 255 255);
+                margin-bottom: 1rem;
+            }
+            h2 {
+                font-family: "Cabin", sans-serif;
+                letter-spacing: 0.02rem;
+                font-weight: 500;
+                font-size: 1.5rem;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    &:hover {
+                        text-decoration: underline;
+                        color: black;
+                    }
+                }
+            }
+            p {
+                color: rgb(96, 111, 123);
+                text-align: left;
+                width: 700px;
+                font-size: 16px;
+                margin-bottom: 2rem;
+            }
+            .symbols {
+                display: flex;
+                align-items: center;
+                font-family: "Poppins", sans-serif;
+                font-size: 10px;
+                margin-bottom: 1.5rem;
+                .item {
+                    display: flex;
+                    padding-right: 1rem;
+                    color: #7e7e7e;
+                }
+                .items {
+                    width: 23px;
+                    padding-right: 0.5rem;
+                    color: #b1b5c5;
+                }
+            }
+            .play_series {
+                font-family: "Poppins", sans-serif;
+                border-radius: 30px;
+                padding: 0.5rem;
+                font-size: 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 200px;
+                background-color: rgb(156 156 156 / 19%);
+                .play {
+                    width: 16px;
+                    margin-right: 5px;
+                }
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+                &:hover {
+                    border: 1px solid rgb(0, 162, 255);
+                    cursor: pointer;
+
+                    .play {
+                        filter: invert(44%) sepia(92%) saturate(2202%)
+                            hue-rotate(176deg) brightness(102%) contrast(104%);
+                    }
+                    a {
+                        color: rgb(0, 162, 255);
+                    }
+                    span {
+                        color: rgb(0, 162, 255);
+                    }
+                }
+            }
+        }
+    }
+
+    .mg-top_tool {
+        margin-top: 2rem;
+        h3 {
+            font-family: "Cabin", sans-serif;
+            letter-spacing: 0.02rem;
+        }
+        .text_imp {
+            font-family: "Poppins", sans-serif;
+            max-width: 650px;
+            text-align: center;
+            margin: auto;
+        }
+        .tool {
+            margin: auto;
+            width: 1200px;
+            height: 380px;
+            border-radius: 20px;
+            background-color: rgb(255 255 255);
+            background-image: url("../img/css-grids-for-everyone.svg");
+            border: 1px solid rgb(160 184 196 / 33%);
+            background-repeat: no-repeat;
+            background-size: 550px;
+            background-position: center;
+            background-position-x: 900px;
+            padding-left: 3rem;
+            padding-top: 2rem;
+            .descrip {
+                margin: 0;
+            }
+            .frame {
+                font-family: "Poppins", sans-serif;
+                font-weight: 700;
+                text-transform: uppercase;
+                background-color: rgb(241, 154, 26);
+                font-size: 10px;
+                width: 90px;
+                padding: 0.4rem;
+                text-align: center;
+                border-radius: 20px;
+                color: rgb(255 255 255);
+                margin-bottom: 1rem;
+            }
+            h2 {
+                font-family: "Cabin", sans-serif;
+                letter-spacing: 0.02rem;
+                font-weight: 500;
+                font-size: 1.5rem;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    &:hover {
+                        text-decoration: underline;
+                        color: black;
+                    }
+                }
+            }
+            p {
+                color: rgb(96, 111, 123);
+                text-align: left;
+                width: 700px;
+                font-size: 16px;
+                margin-bottom: 2rem;
+            }
+            .symbols {
+                display: flex;
+                align-items: center;
+                font-family: "Poppins", sans-serif;
+                font-size: 10px;
+                margin-bottom: 1.5rem;
+                .item {
+                    display: flex;
+                    padding-right: 1rem;
+                    color: #7e7e7e;
+                }
+                .items {
+                    width: 23px;
+                    padding-right: 0.5rem;
+                    color: #b1b5c5;
+                }
+            }
+            .play_series {
+                font-family: "Poppins", sans-serif;
+                border-radius: 30px;
+                padding: 0.5rem;
+                font-size: 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 200px;
+                background-color: rgb(156 156 156 / 19%);
+                .play {
+                    width: 16px;
+                    margin-right: 5px;
+                }
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+                &:hover {
+                    border: 1px solid rgb(0, 162, 255);
+                    cursor: pointer;
+
+                    .play {
+                        filter: invert(44%) sepia(92%) saturate(2202%)
+                            hue-rotate(176deg) brightness(102%) contrast(104%);
+                    }
+                    a {
+                        color: rgb(0, 162, 255);
+                    }
+                    span {
+                        color: rgb(0, 162, 255);
+                    }
+                }
+            }
+        }
+    }
+
     .mg_top_trend {
         margin-top: 50px;
         h3 {
@@ -356,6 +628,1731 @@
                         font-size: 0.6666rem;
                         font-weight: 400;
                         text-align: left;
+                    }
+                }
+            }
+        }
+    }
+    .mg_top_test {
+        margin-top: 50px;
+        h3 {
+            font-family: "Cabin", sans-serif;
+            letter-spacing: 0.02rem;
+        }
+        p {
+            font-family: "Poppins", sans-serif;
+            max-width: 650px;
+            margin: auto;
+        }
+        .cont_test_series {
+            display: flex;
+            background-image: linear-gradient(
+                90deg,
+                rgb(69 149 123),
+                rgb(54 72 106) 79%
+            );
+            width: 1200px;
+            height: 450px;
+            border-radius: 20px;
+            margin: auto;
+            color: white;
+            padding-top: 1.5rem;
+            .wall_machine {
+                width: 500px;
+            }
+            .wall_test {
+                width: 400px;
+            }
+            .card_items {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                .card_item {
+                    width: 300px;
+                    height: 100px;
+                    border-radius: 15px;
+                    display: flex;
+                    margin: 1rem;
+                    &:hover {
+                        background-color: rgb(0 0 0 / 10%);
+                        transition: 0.3s;
+                        .square {
+                            background-color: rgba(0, 0, 0, 0);
+                            transition: 0.3s;
+                        }
+                    }
+                    .square {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 15px;
+                        padding: 0.5rem;
+                        margin-top: 2px;
+                        background-color: rgb(0 0 0 / 10%);
+
+                        .trend_series {
+                            width: 80px;
+                            height: 80px;
+                            border-radius: 50%;
+                        }
+                    }
+                    .text {
+                        padding: 1rem;
+                    }
+                    h5 {
+                        font-family: "Cabin", sans-serif;
+                        letter-spacing: 0.02rem;
+                    }
+                    p {
+                        opacity: 0.5;
+                        font-size: 0.6666rem;
+                        font-weight: 400;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+    .mg_top_learn {
+        margin-top: 50px;
+        h3 {
+            font-family: "Cabin", sans-serif;
+            letter-spacing: 0.02rem;
+        }
+        p {
+            font-family: "Poppins", sans-serif;
+            max-width: 650px;
+            margin: auto;
+        }
+        .cont_learn {
+            margin: auto;
+            position: relative;
+            width: 1200px;
+            height: 380px;
+            border-radius: 20px;
+            background-color: rgb(255 255 255);
+            border: 1px solid rgb(160 184 196 / 33%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .container_1 {
+                background-image: url("../img/whats-new-in-laravel-8.svg");
+                background-repeat: no-repeat;
+                background-size: 420px;
+                background-position: center;
+                background-position-x: -180px;
+                position: absolute;
+                width: 45%;
+                height: 380px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                /*  background-color: chartreuse; */
+                left: 0;
+                .cont_text {
+                    width: 50%;
+                    padding-right: 1rem;
+                    position: absolute;
+                    right: 0;
+                    .title_learn {
+                        font-family: "Cabin", sans-serif;
+                        letter-spacing: 0.02rem;
+                        font-weight: 500;
+                        font-size: 1.3rem;
+                        margin-bottom: 1rem;
+                        text-align: left;
+                        a {
+                            text-decoration: none;
+                            color: black;
+                            &:hover {
+                                text-decoration: underline;
+                                color: black;
+                            }
+                        }
+                    }
+                    .text_learn {
+                        color: rgb(96 111 123);
+                        text-align: left;
+                        max-width: 300px;
+                        font-size: 13px;
+                        margin-bottom: 2rem;
+                        font-family: "Poppins", sans-serif;
+                    }
+                    .symbols {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        font-family: "Poppins", sans-serif;
+                        font-size: 10px;
+                        margin-bottom: 1.5rem;
+                        margin-top: 60px;
+                        /* margin-left: 90px; */
+                        .item {
+                            display: flex;
+                            padding-right: 1rem;
+                            color: #7e7e7e;
+                        }
+                        .items {
+                            width: 23px;
+                            padding-right: 0.5rem;
+                            color: #b1b5c5;
+                        }
+                    }
+                    .play_series {
+                        font-family: "Poppins", sans-serif;
+                        border-radius: 30px;
+                        padding: 0.5rem;
+                        font-size: 14px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 200px;
+                        margin: auto;
+                        background-color: rgb(156 156 156 / 19%);
+                        /* margin-left: 90px; */
+                        .play {
+                            width: 16px;
+                            margin-right: 5px;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: black;
+                        }
+                        &:hover {
+                            border: 1px solid rgb(0, 162, 255);
+                            cursor: pointer;
+
+                            .play {
+                                filter: invert(44%) sepia(92%) saturate(2202%)
+                                    hue-rotate(176deg) brightness(102%)
+                                    contrast(104%);
+                            }
+                            a {
+                                color: rgb(0, 162, 255);
+                            }
+                            span {
+                                color: rgb(0, 162, 255);
+                            }
+                        }
+                    }
+                }
+            }
+            .container_2 {
+                position: absolute;
+                width: 10%;
+                height: 380px;
+                /* background-color: cyan; */
+                .divider {
+                    width: 3px;
+                    height: 80%;
+                    margin-top: 2rem;
+                    margin-left: 60px;
+                    border: 1px solid rgb(0 0 0 / 3%);
+                }
+            }
+            .container_3 {
+                background-image: url("../img/laravel-from-scratch-2021.svg");
+                background-repeat: no-repeat;
+                background-size: 420px;
+                background-position: center;
+                background-position-x: 310px;
+                position: absolute;
+                width: 45%;
+                height: 380px;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                right: 0;
+                .cont_text {
+                    width: 50%;
+                    padding-left: 1rem;
+                    position: absolute;
+                    left: 0;
+                    .title_learn {
+                        font-family: "Cabin", sans-serif;
+                        letter-spacing: 0.02rem;
+                        font-weight: 500;
+                        font-size: 1.3rem;
+                        margin-bottom: 1rem;
+                        text-align: left;
+                        a {
+                            text-decoration: none;
+                            color: black;
+                            &:hover {
+                                text-decoration: underline;
+                                color: black;
+                            }
+                        }
+                    }
+                    .text_learn {
+                        color: rgb(96 111 123);
+                        text-align: left;
+                        max-width: 300px;
+                        font-size: 13px;
+                        margin-bottom: 2rem;
+                        font-family: "Poppins", sans-serif;
+                    }
+                    .symbols {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        font-family: "Poppins", sans-serif;
+                        font-size: 10px;
+                        margin-bottom: 1.5rem;
+                        margin-top: 60px;
+                        /* margin-left: 90px; */
+                        .item {
+                            display: flex;
+                            padding-right: 1rem;
+                            color: #7e7e7e;
+                        }
+                        .items {
+                            width: 23px;
+                            padding-right: 0.5rem;
+                            color: #b1b5c5;
+                        }
+                    }
+                    .play_series {
+                        font-family: "Poppins", sans-serif;
+                        border-radius: 30px;
+                        padding: 0.5rem;
+                        font-size: 14px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 200px;
+                        margin: auto;
+                        background-color: rgb(156 156 156 / 19%);
+                        /* margin-left: 90px; */
+                        .play {
+                            width: 16px;
+                            margin-right: 5px;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: black;
+                        }
+                        &:hover {
+                            border: 1px solid rgb(0, 162, 255);
+                            cursor: pointer;
+
+                            .play {
+                                filter: invert(44%) sepia(92%) saturate(2202%)
+                                    hue-rotate(176deg) brightness(102%)
+                                    contrast(104%);
+                            }
+                            a {
+                                color: rgb(0, 162, 255);
+                            }
+                            span {
+                                color: rgb(0, 162, 255);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mg_top_grow {
+        margin-top: 50px;
+        h3 {
+            font-family: "Cabin", sans-serif;
+            letter-spacing: 0.02rem;
+        }
+        p {
+            font-family: "Poppins", sans-serif;
+            max-width: 650px;
+            margin: auto;
+        }
+        .cont_learn {
+            margin: auto;
+            position: relative;
+            width: 1200px;
+            height: 380px;
+            border-radius: 20px;
+            background-color: rgb(255 255 255);
+            border: 1px solid rgb(160 184 196 / 33%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .container_1 {
+                background-image: url("../img/tailwind-css-rebuilds.svg");
+                background-repeat: no-repeat;
+                background-size: 420px;
+                background-position: center;
+                background-position-x: -180px;
+                position: absolute;
+                width: 45%;
+                height: 380px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                /*  background-color: chartreuse; */
+                left: 0;
+                .cont_text {
+                    width: 50%;
+                    padding-right: 1rem;
+                    position: absolute;
+                    right: 0;
+                    .title_learn {
+                        font-family: "Cabin", sans-serif;
+                        letter-spacing: 0.02rem;
+                        font-weight: 500;
+                        font-size: 1.3rem;
+                        margin-bottom: 1rem;
+                        text-align: left;
+                        a {
+                            text-decoration: none;
+                            color: black;
+                            &:hover {
+                                text-decoration: underline;
+                                color: black;
+                            }
+                        }
+                    }
+                    .text_learn {
+                        color: rgb(96 111 123);
+                        text-align: left;
+                        max-width: 300px;
+                        font-size: 13px;
+                        margin-bottom: 2rem;
+                        font-family: "Poppins", sans-serif;
+                    }
+                    .symbols {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        font-family: "Poppins", sans-serif;
+                        font-size: 10px;
+                        margin-bottom: 1.5rem;
+                        margin-top: 60px;
+                        /* margin-left: 90px; */
+                        .item {
+                            display: flex;
+                            padding-right: 1rem;
+                            color: #7e7e7e;
+                        }
+                        .items {
+                            width: 23px;
+                            padding-right: 0.5rem;
+                            color: #b1b5c5;
+                        }
+                    }
+                    .play_series {
+                        font-family: "Poppins", sans-serif;
+                        border-radius: 30px;
+                        padding: 0.5rem;
+                        font-size: 14px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 200px;
+                        margin: auto;
+                        background-color: rgb(156 156 156 / 19%);
+                        /* margin-left: 90px; */
+                        .play {
+                            width: 16px;
+                            margin-right: 5px;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: black;
+                        }
+                        &:hover {
+                            border: 1px solid rgb(0, 162, 255);
+                            cursor: pointer;
+
+                            .play {
+                                filter: invert(44%) sepia(92%) saturate(2202%)
+                                    hue-rotate(176deg) brightness(102%)
+                                    contrast(104%);
+                            }
+                            a {
+                                color: rgb(0, 162, 255);
+                            }
+                            span {
+                                color: rgb(0, 162, 255);
+                            }
+                        }
+                    }
+                }
+            }
+            .container_2 {
+                position: absolute;
+                width: 10%;
+                height: 380px;
+                /* background-color: cyan; */
+                .divider {
+                    width: 3px;
+                    height: 80%;
+                    margin-top: 2rem;
+                    margin-left: 60px;
+                    border: 1px solid rgb(0 0 0 / 3%);
+                }
+            }
+            .container_3 {
+                background-image: url("../img/alpine-essentials.svg");
+                background-repeat: no-repeat;
+                background-size: 420px;
+                background-position: center;
+                background-position-x: 310px;
+                position: absolute;
+                width: 45%;
+                height: 380px;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                right: 0;
+                .cont_text {
+                    width: 50%;
+                    padding-left: 1rem;
+                    position: absolute;
+                    left: 0;
+                    .title_learn {
+                        font-family: "Cabin", sans-serif;
+                        letter-spacing: 0.02rem;
+                        font-weight: 500;
+                        font-size: 1.3rem;
+                        margin-bottom: 1rem;
+                        text-align: left;
+                        a {
+                            text-decoration: none;
+                            color: black;
+                            &:hover {
+                                text-decoration: underline;
+                                color: black;
+                            }
+                        }
+                    }
+                    .text_learn {
+                        color: rgb(96 111 123);
+                        text-align: left;
+                        max-width: 300px;
+                        font-size: 13px;
+                        margin-bottom: 2rem;
+                        font-family: "Poppins", sans-serif;
+                    }
+                    .symbols {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        font-family: "Poppins", sans-serif;
+                        font-size: 10px;
+                        margin-bottom: 1.5rem;
+                        margin-top: 60px;
+                        /* margin-left: 90px; */
+                        .item {
+                            display: flex;
+                            padding-right: 1rem;
+                            color: #7e7e7e;
+                        }
+                        .items {
+                            width: 23px;
+                            padding-right: 0.5rem;
+                            color: #b1b5c5;
+                        }
+                    }
+                    .play_series {
+                        font-family: "Poppins", sans-serif;
+                        border-radius: 30px;
+                        padding: 0.5rem;
+                        font-size: 14px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 200px;
+                        margin: auto;
+                        background-color: rgb(156 156 156 / 19%);
+                        /* margin-left: 90px; */
+                        .play {
+                            width: 16px;
+                            margin-right: 5px;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: black;
+                        }
+                        &:hover {
+                            border: 1px solid rgb(0, 162, 255);
+                            cursor: pointer;
+
+                            .play {
+                                filter: invert(44%) sepia(92%) saturate(2202%)
+                                    hue-rotate(176deg) brightness(102%)
+                                    contrast(104%);
+                            }
+                            a {
+                                color: rgb(0, 162, 255);
+                            }
+                            span {
+                                color: rgb(0, 162, 255);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mg_top_cards {
+        margin-top: 50px;
+        .cont_cards {
+            margin: auto;
+            position: relative;
+            width: 1200px;
+            height: 280px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .card_one {
+                background-color: rgb(255 255 255);
+                border: 1px solid rgb(160 184 196 / 33%);
+                position: absolute;
+                border-radius: 20px;
+                left: 0;
+                width: 30%;
+                height: 100%;
+
+                .card_one_wrap {
+                    position: absolute;
+                    left: 0;
+                    padding: 1rem;
+                    border-radius: 20px;
+                    width: 40%;
+                    height: 100%;
+                    background: linear-gradient(
+                        180deg,
+                        rgb(244 72 129),
+                        rgb(236 69 79)
+                    );
+                    color: white;
+                    font-family: "Poppins", sans-serif;
+                    .label_card {
+                        text-transform: uppercase;
+                        p {
+                            font-size: 10px;
+                            font-weight: 600;
+                            background-color: rgb(0 0 0 / 10%);
+                            border-radius: 10px;
+                            padding: 0.5rem;
+                            margin-bottom: 1.5rem;
+                        }
+                    }
+                    .circle_item {
+                        width: 100px;
+                        margin-bottom: 1.5rem;
+                        margin-left: 0.5rem;
+                    }
+                    .livel_series {
+                        text-align: center;
+                        h6 {
+                            font-size: 10px;
+                            font-weight: 600;
+                        }
+                        .livel_grade {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding-top: 1rem;
+                            .livel_one {
+                                background-color: white;
+                                width: 25px;
+                                height: 4px;
+                                border-radius: 5px;
+                                margin-right: 0.3rem;
+                            }
+                            .livel_two {
+                                background-color: white;
+                                width: 25px;
+                                height: 4px;
+                                border-radius: 5px;
+                                margin-right: 0.3rem;
+                            }
+                            .livel_three {
+                                background-color: rgba(0, 0, 0, 0.2);
+                                width: 25px;
+                                height: 4px;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+                .card_left {
+                    width: 220px;
+                    /* background-color: rgb(240 248 255); */
+                    position: absolute;
+                    padding: 1rem;
+                    right: 0;
+                    .title_h3 {
+                        padding-top: 1rem;
+                        font-size: 20px;
+                        text-align: left;
+                    }
+                    p {
+                        text-align: left;
+                        line-height: 1.5;
+                        font-size: 13px;
+                        color: rgb(0 0 0 / 60%);
+                    }
+                    .symbols {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        font-family: "Poppins", sans-serif;
+                        font-size: 10px;
+                        /* margin-left: 90px; */
+                        .item {
+                            display: flex;
+                            padding-right: 1rem;
+                            color: #7e7e7e;
+                        }
+                        .items {
+                            width: 23px;
+                            padding-right: 0.5rem;
+                            color: #b1b5c5;
+                        }
+                    }
+                    .play_series {
+                        visibility: hidden;
+                        font-family: "Poppins", sans-serif;
+                        border-radius: 30px;
+                        padding: 0.5rem;
+                        font-size: 14px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: -30px;
+                        background-color: rgb(156 156 156 / 19%);
+                        /* margin-left: 90px; */
+                        .play {
+                            width: 16px;
+                            margin-right: 5px;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: black;
+                        }
+                        &:hover {
+                            border: 1px solid rgb(0, 162, 255);
+                            cursor: pointer;
+
+                            .play {
+                                filter: invert(44%) sepia(92%) saturate(2202%)
+                                    hue-rotate(176deg) brightness(102%)
+                                    contrast(104%);
+                            }
+                            a {
+                                color: rgb(0, 162, 255);
+                            }
+                            span {
+                                color: rgb(0, 162, 255);
+                            }
+                        }
+                    }
+                    &:hover {
+                        transition: 0.2s;
+                        .symbols {
+                            visibility: hidden;
+                        }
+                        .play_series {
+                            visibility: visible;
+                            font-family: "Poppins", sans-serif;
+                            border-radius: 30px;
+                            padding: 0.5rem;
+                            font-size: 14px;
+                            font-weight: 700;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-top: -30px;
+                            background-color: rgb(156 156 156 / 19%);
+                        }
+                    }
+                }
+            }
+            .card_two {
+                background-color: rgb(255 255 255);
+                border: 1px solid rgb(160 184 196 / 33%);
+                position: absolute;
+                border-radius: 20px;
+                width: 30%;
+                height: 100%;
+                .card_two_wrap {
+                    background: linear-gradient(
+                        180deg,
+                        rgb(33 200 246),
+                        rgb(99 123 255)
+                    );
+                    position: absolute;
+                    left: 50;
+                    padding: 1rem;
+                    border-radius: 20px;
+                    width: 40%;
+                    height: 100%;
+                    color: white;
+                    font-family: "Poppins", sans-serif;
+                    .label_card {
+                        text-transform: uppercase;
+                        p {
+                            font-size: 10px;
+                            font-weight: 600;
+                            background-color: rgb(0 0 0 / 10%);
+                            border-radius: 10px;
+                            padding: 0.5rem;
+                            margin-bottom: 1.5rem;
+                        }
+                    }
+                    .circle_item {
+                        width: 100px;
+                        margin-bottom: 1.5rem;
+                        margin-left: 0.5rem;
+                    }
+                    .livel_series {
+                        text-align: center;
+                        h6 {
+                            font-size: 10px;
+                            font-weight: 600;
+                        }
+                        .livel_grade {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding-top: 1rem;
+                            .livel_one {
+                                background-color: white;
+                                width: 25px;
+                                height: 4px;
+                                border-radius: 5px;
+                                margin-right: 0.3rem;
+                            }
+                            .livel_two {
+                                background-color: white;
+                                width: 25px;
+                                height: 4px;
+                                border-radius: 5px;
+                                margin-right: 0.3rem;
+                            }
+                            .livel_three {
+                                background-color: rgba(0, 0, 0, 0.2);
+                                width: 25px;
+                                height: 4px;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+                .card_left {
+                    width: 220px;
+                    /* background-color: rgb(240 248 255); */
+                    position: absolute;
+                    padding: 1rem;
+                    right: 0;
+                    .title_h3 {
+                        padding-top: 1rem;
+                        font-size: 20px;
+                        text-align: left;
+                    }
+                    p {
+                        text-align: left;
+                        line-height: 1.5;
+                        font-size: 13px;
+                        color: rgb(0 0 0 / 60%);
+                    }
+                    .symbols {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        font-family: "Poppins", sans-serif;
+                        font-size: 10px;
+                        /* margin-left: 90px; */
+                        .item {
+                            display: flex;
+                            padding-right: 1rem;
+                            color: #7e7e7e;
+                        }
+                        .items {
+                            width: 23px;
+                            padding-right: 0.5rem;
+                            color: #b1b5c5;
+                        }
+                    }
+                    .play_series {
+                        visibility: hidden;
+                        font-family: "Poppins", sans-serif;
+                        border-radius: 30px;
+                        padding: 0.5rem;
+                        font-size: 14px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: -30px;
+                        background-color: rgb(156 156 156 / 19%);
+                        /* margin-left: 90px; */
+                        .play {
+                            width: 16px;
+                            margin-right: 5px;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: black;
+                        }
+                        &:hover {
+                            border: 1px solid rgb(0, 162, 255);
+                            cursor: pointer;
+
+                            .play {
+                                filter: invert(44%) sepia(92%) saturate(2202%)
+                                    hue-rotate(176deg) brightness(102%)
+                                    contrast(104%);
+                            }
+                            a {
+                                color: rgb(0, 162, 255);
+                            }
+                            span {
+                                color: rgb(0, 162, 255);
+                            }
+                        }
+                    }
+                    &:hover {
+                        transition: 0.2s;
+                        .symbols {
+                            visibility: hidden;
+                        }
+                        .play_series {
+                            visibility: visible;
+                            font-family: "Poppins", sans-serif;
+                            border-radius: 30px;
+                            padding: 0.5rem;
+                            font-size: 14px;
+                            font-weight: 700;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-top: -30px;
+                            background-color: rgb(156 156 156 / 19%);
+                        }
+                    }
+                }
+            }
+            .card_three {
+                background-color: rgb(255 255 255);
+                border: 1px solid rgb(160 184 196 / 33%);
+                position: absolute;
+                right: 0;
+                border-radius: 20px;
+                width: 30%;
+                height: 100%;
+                .card_three_wrap {
+                    background: linear-gradient(
+                        180deg,
+                        rgb(244 72 129),
+                        rgb(236 69 79)
+                    );
+                    position: absolute;
+                    left: 100;
+                    padding: 1rem;
+                    border-radius: 20px;
+                    width: 40%;
+                    height: 100%;
+                    color: white;
+                    font-family: "Poppins", sans-serif;
+                    .label_card {
+                        text-transform: uppercase;
+                        p {
+                            font-size: 10px;
+                            font-weight: 600;
+                            background-color: rgb(0 0 0 / 10%);
+                            border-radius: 10px;
+                            padding: 0.5rem;
+                            margin-bottom: 1.5rem;
+                        }
+                    }
+                    .circle_item {
+                        width: 100px;
+                        margin-bottom: 1.5rem;
+                        margin-left: 0.5rem;
+                    }
+                    .livel_series {
+                        text-align: center;
+                        h6 {
+                            font-size: 10px;
+                            font-weight: 600;
+                        }
+                        .livel_grade {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding-top: 1rem;
+                            .livel_one {
+                                background-color: white;
+                                width: 25px;
+                                height: 4px;
+                                border-radius: 5px;
+                                margin-right: 0.3rem;
+                            }
+                            .livel_two {
+                                background-color: white;
+                                width: 25px;
+                                height: 4px;
+                                border-radius: 5px;
+                                margin-right: 0.3rem;
+                            }
+                            .livel_three {
+                                background-color: rgba(0, 0, 0, 0.2);
+                                width: 25px;
+                                height: 4px;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+                .card_left {
+                    width: 220px;
+                    /* background-color: rgb(240 248 255); */
+                    position: absolute;
+                    padding: 1rem;
+                    right: 0;
+                    .title_h3 {
+                        padding-top: 1rem;
+                        font-size: 20px;
+                        text-align: left;
+                    }
+                    p {
+                        text-align: left;
+                        line-height: 1.5;
+                        font-size: 13px;
+                        color: rgb(0 0 0 / 60%);
+                    }
+                    .symbols {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        font-family: "Poppins", sans-serif;
+                        font-size: 10px;
+                        /* margin-left: 90px; */
+                        .item {
+                            display: flex;
+                            padding-right: 1rem;
+                            color: #7e7e7e;
+                        }
+                        .items {
+                            width: 23px;
+                            padding-right: 0.5rem;
+                            color: #b1b5c5;
+                        }
+                    }
+                    .play_series {
+                        visibility: hidden;
+                        font-family: "Poppins", sans-serif;
+                        border-radius: 30px;
+                        padding: 0.5rem;
+                        font-size: 14px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: -30px;
+                        background-color: rgb(156 156 156 / 19%);
+                        /* margin-left: 90px; */
+                        .play {
+                            width: 16px;
+                            margin-right: 5px;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: black;
+                        }
+                        &:hover {
+                            border: 1px solid rgb(0, 162, 255);
+                            cursor: pointer;
+
+                            .play {
+                                filter: invert(44%) sepia(92%) saturate(2202%)
+                                    hue-rotate(176deg) brightness(102%)
+                                    contrast(104%);
+                            }
+                            a {
+                                color: rgb(0, 162, 255);
+                            }
+                            span {
+                                color: rgb(0, 162, 255);
+                            }
+                        }
+                    }
+                    &:hover {
+                        transition: 0.2s;
+                        .symbols {
+                            visibility: hidden;
+                        }
+                        .play_series {
+                            visibility: visible;
+                            font-family: "Poppins", sans-serif;
+                            border-radius: 30px;
+                            padding: 0.5rem;
+                            font-size: 14px;
+                            font-weight: 700;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-top: -30px;
+                            background-color: rgb(156 156 156 / 19%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mg_top_violet {
+        margin-top: 50px;
+        .cont_cards {
+            margin: auto;
+            position: relative;
+            width: 1200px;
+            height: 280px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .card_one {
+                background-color: rgb(255 255 255);
+                border: 1px solid rgb(160 184 196 / 33%);
+                position: absolute;
+                border-radius: 20px;
+                left: 0;
+                width: 30%;
+                height: 100%;
+
+                .card_one_wrap {
+                    position: absolute;
+                    left: 0;
+                    padding: 1rem;
+                    border-radius: 20px;
+                    width: 40%;
+                    height: 100%;
+                    background: linear-gradient(
+                        0deg,
+                        rgb(139 96 237),
+                        rgb(179 114 189)
+                    );
+                    color: white;
+                    font-family: "Poppins", sans-serif;
+                    .label_card {
+                        text-transform: uppercase;
+                        p {
+                            font-size: 10px;
+                            font-weight: 600;
+                            background-color: rgb(0 0 0 / 10%);
+                            border-radius: 10px;
+                            padding: 0.5rem;
+                            margin-bottom: 1.5rem;
+                        }
+                    }
+                    .circle_item {
+                        width: 100px;
+                        margin-bottom: 1.5rem;
+                        margin-left: 0.5rem;
+                    }
+                    .livel_series {
+                        text-align: center;
+                        h6 {
+                            font-size: 10px;
+                            font-weight: 600;
+                        }
+                        .livel_grade {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding-top: 1rem;
+                            .livel_one {
+                                background-color: white;
+                                width: 25px;
+                                height: 4px;
+                                border-radius: 5px;
+                                margin-right: 0.3rem;
+                            }
+                            .livel_two {
+                                background-color: white;
+                                width: 25px;
+                                height: 4px;
+                                border-radius: 5px;
+                                margin-right: 0.3rem;
+                            }
+                            .livel_three {
+                                background-color: rgba(0, 0, 0, 0.2);
+                                width: 25px;
+                                height: 4px;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+                .card_left {
+                    width: 220px;
+                    /* background-color: rgb(240 248 255); */
+                    position: absolute;
+                    padding: 1rem;
+                    right: 0;
+                    .title_h3 {
+                        padding-top: 1rem;
+                        font-size: 20px;
+                        text-align: left;
+                    }
+                    p {
+                        text-align: left;
+                        line-height: 1.5;
+                        font-size: 13px;
+                        color: rgb(0 0 0 / 60%);
+                    }
+                    .symbols {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        font-family: "Poppins", sans-serif;
+                        font-size: 10px;
+                        /* margin-left: 90px; */
+                        .item {
+                            display: flex;
+                            padding-right: 1rem;
+                            color: #7e7e7e;
+                        }
+                        .items {
+                            width: 23px;
+                            padding-right: 0.5rem;
+                            color: #b1b5c5;
+                        }
+                    }
+                    .play_series {
+                        visibility: hidden;
+                        font-family: "Poppins", sans-serif;
+                        border-radius: 30px;
+                        padding: 0.5rem;
+                        font-size: 14px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: -30px;
+                        background-color: rgb(156 156 156 / 19%);
+                        /* margin-left: 90px; */
+                        .play {
+                            width: 16px;
+                            margin-right: 5px;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: black;
+                        }
+                        &:hover {
+                            border: 1px solid rgb(0, 162, 255);
+                            cursor: pointer;
+
+                            .play {
+                                filter: invert(44%) sepia(92%) saturate(2202%)
+                                    hue-rotate(176deg) brightness(102%)
+                                    contrast(104%);
+                            }
+                            a {
+                                color: rgb(0, 162, 255);
+                            }
+                            span {
+                                color: rgb(0, 162, 255);
+                            }
+                        }
+                    }
+                    &:hover {
+                        transition: 0.2s;
+                        .symbols {
+                            visibility: hidden;
+                        }
+                        .play_series {
+                            visibility: visible;
+                            font-family: "Poppins", sans-serif;
+                            border-radius: 30px;
+                            padding: 0.5rem;
+                            font-size: 14px;
+                            font-weight: 700;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-top: -30px;
+                            background-color: rgb(156 156 156 / 19%);
+                        }
+                    }
+                }
+            }
+            .card_two {
+                background-color: rgb(255 255 255);
+                border: 1px solid rgb(160 184 196 / 33%);
+                position: absolute;
+                border-radius: 20px;
+                width: 30%;
+                height: 100%;
+                .card_two_wrap {
+                    background: linear-gradient(
+                        0deg,
+                        rgb(139 96 237),
+                        rgb(179 114 189)
+                    );
+                    position: absolute;
+                    left: 50;
+                    padding: 1rem;
+                    border-radius: 20px;
+                    width: 40%;
+                    height: 100%;
+                    color: white;
+                    font-family: "Poppins", sans-serif;
+                    .label_card {
+                        text-transform: uppercase;
+                        p {
+                            font-size: 10px;
+                            font-weight: 600;
+                            background-color: rgb(0 0 0 / 10%);
+                            border-radius: 10px;
+                            padding: 0.5rem;
+                            margin-bottom: 1.5rem;
+                        }
+                    }
+                    .circle_item {
+                        width: 100px;
+                        margin-bottom: 1.5rem;
+                        margin-left: 0.5rem;
+                    }
+                    .livel_series {
+                        text-align: center;
+                        h6 {
+                            font-size: 10px;
+                            font-weight: 600;
+                        }
+                        .livel_grade {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding-top: 1rem;
+                            .livel_one {
+                                background-color: white;
+                                width: 25px;
+                                height: 4px;
+                                border-radius: 5px;
+                                margin-right: 0.3rem;
+                            }
+                            .livel_two {
+                                background-color: white;
+                                width: 25px;
+                                height: 4px;
+                                border-radius: 5px;
+                                margin-right: 0.3rem;
+                            }
+                            .livel_three {
+                                background-color: rgba(0, 0, 0, 0.2);
+                                width: 25px;
+                                height: 4px;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+                .card_left {
+                    width: 220px;
+                    /* background-color: rgb(240 248 255); */
+                    position: absolute;
+                    padding: 1rem;
+                    right: 0;
+                    .title_h3 {
+                        padding-top: 1rem;
+                        font-size: 20px;
+                        text-align: left;
+                    }
+                    p {
+                        text-align: left;
+                        line-height: 1.5;
+                        font-size: 13px;
+                        color: rgb(0 0 0 / 60%);
+                    }
+                    .symbols {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        font-family: "Poppins", sans-serif;
+                        font-size: 10px;
+                        /* margin-left: 90px; */
+                        .item {
+                            display: flex;
+                            padding-right: 1rem;
+                            color: #7e7e7e;
+                        }
+                        .items {
+                            width: 23px;
+                            padding-right: 0.5rem;
+                            color: #b1b5c5;
+                        }
+                    }
+                    .play_series {
+                        visibility: hidden;
+                        font-family: "Poppins", sans-serif;
+                        border-radius: 30px;
+                        padding: 0.5rem;
+                        font-size: 14px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: -30px;
+                        background-color: rgb(156 156 156 / 19%);
+                        /* margin-left: 90px; */
+                        .play {
+                            width: 16px;
+                            margin-right: 5px;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: black;
+                        }
+                        &:hover {
+                            border: 1px solid rgb(0, 162, 255);
+                            cursor: pointer;
+
+                            .play {
+                                filter: invert(44%) sepia(92%) saturate(2202%)
+                                    hue-rotate(176deg) brightness(102%)
+                                    contrast(104%);
+                            }
+                            a {
+                                color: rgb(0, 162, 255);
+                            }
+                            span {
+                                color: rgb(0, 162, 255);
+                            }
+                        }
+                    }
+                    &:hover {
+                        transition: 0.2s;
+                        .symbols {
+                            visibility: hidden;
+                        }
+                        .play_series {
+                            visibility: visible;
+                            font-family: "Poppins", sans-serif;
+                            border-radius: 30px;
+                            padding: 0.5rem;
+                            font-size: 14px;
+                            font-weight: 700;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-top: -30px;
+                            background-color: rgb(156 156 156 / 19%);
+                        }
+                    }
+                }
+            }
+            .card_three {
+                background-color: rgb(255 255 255);
+                border: 1px solid rgb(160 184 196 / 33%);
+                position: absolute;
+                right: 0;
+                border-radius: 20px;
+                width: 30%;
+                height: 100%;
+                .card_three_wrap {
+                    background: linear-gradient(
+                        0deg,
+                        rgb(139 96 237),
+                        rgb(179 114 189)
+                    );
+                    position: absolute;
+                    left: 100;
+                    padding: 1rem;
+                    border-radius: 20px;
+                    width: 40%;
+                    height: 100%;
+                    color: white;
+                    font-family: "Poppins", sans-serif;
+                    .label_card {
+                        text-transform: uppercase;
+                        p {
+                            font-size: 10px;
+                            font-weight: 600;
+                            background-color: rgb(0 0 0 / 10%);
+                            border-radius: 10px;
+                            padding: 0.5rem;
+                            margin-bottom: 1.5rem;
+                        }
+                    }
+                    .circle_item {
+                        width: 100px;
+                        margin-bottom: 1.5rem;
+                        margin-left: 0.5rem;
+                    }
+                    .livel_series {
+                        text-align: center;
+                        h6 {
+                            font-size: 10px;
+                            font-weight: 600;
+                        }
+                        .livel_grade {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding-top: 1rem;
+                            .livel_one {
+                                background-color: white;
+                                width: 25px;
+                                height: 4px;
+                                border-radius: 5px;
+                                margin-right: 0.3rem;
+                            }
+                            .livel_two {
+                                background-color: white;
+                                width: 25px;
+                                height: 4px;
+                                border-radius: 5px;
+                                margin-right: 0.3rem;
+                            }
+                            .livel_three {
+                                background-color: rgba(0, 0, 0, 0.2);
+                                width: 25px;
+                                height: 4px;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+                .card_left {
+                    width: 220px;
+                    /* background-color: rgb(240 248 255); */
+                    position: absolute;
+                    padding: 1rem;
+                    right: 0;
+                    .title_h3 {
+                        padding-top: 1rem;
+                        font-size: 20px;
+                        text-align: left;
+                    }
+                    p {
+                        text-align: left;
+                        line-height: 1.5;
+                        font-size: 13px;
+                        color: rgb(0 0 0 / 60%);
+                    }
+                    .symbols {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        font-family: "Poppins", sans-serif;
+                        font-size: 10px;
+                        /* margin-left: 90px; */
+                        .item {
+                            display: flex;
+                            padding-right: 1rem;
+                            color: #7e7e7e;
+                        }
+                        .items {
+                            width: 23px;
+                            padding-right: 0.5rem;
+                            color: #b1b5c5;
+                        }
+                    }
+                    .play_series {
+                        visibility: hidden;
+                        font-family: "Poppins", sans-serif;
+                        border-radius: 30px;
+                        padding: 0.5rem;
+                        font-size: 14px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: -30px;
+                        background-color: rgb(156 156 156 / 19%);
+                        /* margin-left: 90px; */
+                        .play {
+                            width: 16px;
+                            margin-right: 5px;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: black;
+                        }
+                        &:hover {
+                            border: 1px solid rgb(0, 162, 255);
+                            cursor: pointer;
+
+                            .play {
+                                filter: invert(44%) sepia(92%) saturate(2202%)
+                                    hue-rotate(176deg) brightness(102%)
+                                    contrast(104%);
+                            }
+                            a {
+                                color: rgb(0, 162, 255);
+                            }
+                            span {
+                                color: rgb(0, 162, 255);
+                            }
+                        }
+                    }
+                    &:hover {
+                        transition: 0.2s;
+                        .symbols {
+                            visibility: hidden;
+                        }
+                        .play_series {
+                            visibility: visible;
+                            font-family: "Poppins", sans-serif;
+                            border-radius: 30px;
+                            padding: 0.5rem;
+                            font-size: 14px;
+                            font-weight: 700;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-top: -30px;
+                            background-color: rgb(156 156 156 / 19%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mg_top_forget {
+        margin-top: 2rem;
+        .cont_recently_series {
+            padding-right: 1.5rem;
+            background-image: linear-gradient(
+                90deg,
+                rgb(50 68 102),
+                rgb(96 121 158) 79%
+            );
+            width: 1200px;
+            height: 350px;
+            border-radius: 20px;
+            margin: auto;
+            color: white;
+            p {
+                font-family: "Cabin", sans-serif;
+            }
+            .cards {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 1.5rem;
+                .card {
+                    padding: 0.5rem;
+                    width: 300px;
+                    height: 200px;
+                    border-radius: 20px;
+                    margin-left: 1.5rem;
+                    text-align: center;
+                    background-color: rgb(0 0 0 / 3%);
+                    .start_series {
+                        font-family: "Poppins", sans-serif;
+                        display: none;
+                        font-weight: 600;
+                        border-radius: 30px;
+                        padding: 0.2rem;
+                        font-size: 14px;
+                        width: 160px;
+                        margin-top: 1rem;
+                        margin-left: 18px;
+                        border: 1px solid rgb(255 255 255 / 10%);
+                        background-color: rgb(156 156 156 / 19%);
+                        &:hover {
+                            background-color: white;
+                            color: rgb(4, 142, 255);
+                            border: 1px solid rgb(4, 142, 255);
+                        }
+                    }
+                    &:hover {
+                        background-color: rgb(0 0 0 / 10%);
+                        transition: 0.3s;
+                        .desc_serie {
+                            display: none;
+                            transition: 0.3s;
+                        }
+                        .start_series {
+                            display: block;
+                            transition: 0.3s;
+                            cursor: pointer;
+                        }
+                    }
+                    .circle {
+                        width: 74px;
+                        height: 74px;
+                        background-color: rgb(0 0 0 / 12%);
+                        border-radius: 50%;
+                        margin-left: 30%;
+                        position: relative;
+                    }
+                    .rc_series {
+                        width: 66px;
+                        height: 66px;
+                        position: absolute;
+                        top: 0.25rem;
+                        left: 0.25rem;
+                    }
+                    .title_serie {
+                        font-size: 15px;
+                        padding: 0.3rem;
+                    }
+                    .date_serie {
+                        opacity: 0.5;
+                        font-size: 0.666rem;
+                        padding: 0.2rem;
+                    }
+                    .desc_serie {
+                        opacity: 0.5;
+                        max-width: 30em;
+                        padding: 0.5rem;
+                        text-align: left;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .mg_top_topics {
+        margin-top: 50px;
+        h3 {
+            font-family: "Cabin", sans-serif;
+            letter-spacing: 0.02rem;
+        }
+        p {
+            font-family: "Poppins", sans-serif;
+            max-width: 650px;
+            margin: auto;
+        }
+        .cont_test_topics {
+            width: 1200px;
+            height: 350px;
+            border-radius: 20px;
+            margin: auto;
+            color: white;
+            padding-top: 1.5rem;
+            .cards {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 1rem;
+                .card {
+                    background-color: rgb(255 255 255);
+                    border: 1px solid rgb(160 184 196 / 33%);
+                    width: 225px;
+                    height: 90px;
+                    border-radius: 20px;
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 1rem;
+                    align-items: center;
+                    .circle {
+                        /*  padding: 0.5rem; */
+                        .topic {
+                            width: 50px;
+                        }
+                    }
+                    .info_title {
+                        color: black;
+                        .title_serie {
+                            font-size: 14px;
+                            padding-bottom: 0.6rem;
+                            margin-top: 20px;
+                            font-family: "Cabin", sans-serif;
+                            text-align: left;
+                        }
+                        .desc_serie {
+                            font-size: 0.6rem;
+                            margin-top: -20px;
+                            color: rgba(96, 111, 123);
+                        }
                     }
                 }
             }

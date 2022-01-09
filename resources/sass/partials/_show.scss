@@ -1,5 +1,5 @@
 .serie {
-    background-color: rgb(238 238 244);
+    background-color: rgb(238 238 244 / 45%);
     padding: 1.5rem;
     .cont_show {
         position: relative;
@@ -259,6 +259,236 @@
                     width: 35px;
                     padding-right: 0.5rem;
                     filter: invert(1);
+                }
+            }
+        }
+    }
+    .mg_top_card {
+        margin-top: 2rem;
+        .card_lesson {
+            width: 800px;
+            height: 180px;
+            padding: 0.8rem 1.5rem;
+            margin: auto;
+            background-color: white;
+            border-radius: 20px;
+            border: 1px solid rgba(216, 216, 216, 0.57);
+            .nav_text {
+                padding-top: 0.5rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                .teacher {
+                    display: flex;
+                    align-items: center;
+                    font-family: "Cabin", sans-serif;
+                    text-transform: uppercase;
+                    .name {
+                        font-weight: 700;
+                        margin-right: 0.5rem;
+                    }
+                }
+                .social_web {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        width: 25px;
+                        margin-right: 0.5rem;
+                        filter: invert(60%) sepia(12%) saturate(391%)
+                            hue-rotate(166deg) brightness(96%) contrast(84%);
+
+                        &:hover {
+                            filter: invert(52%) sepia(84%) saturate(3831%)
+                                hue-rotate(178deg) brightness(105%)
+                                contrast(103%);
+                            transition: 0.5s;
+                            cursor: pointer;
+                        }
+                    }
+                    .website {
+                        font-family: "Poppins";
+                        font-weight: 700;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        color: #8795a1;
+                        border: 1px solid rgb(135, 149, 161);
+                        padding: 0.2rem 1rem;
+                        border-radius: 20px;
+                        &:hover {
+                            color: rgb(0, 162, 255);
+                            border: 1px solid rgb(0, 162, 255);
+                            transition: 0.5s;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .desc_lesson {
+                padding: 1.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .profile_pic {
+                    width: 80px;
+                    border-radius: 50%;
+                    border: 4px solid rgba(244, 72, 129);
+                }
+                .text_lesson {
+                    padding-left: 2rem;
+                    p {
+                        font-family: "Poppins", sans-serif;
+                    }
+                }
+            }
+        }
+    }
+    .mg_top_wrap_card {
+        margin-top: 1.5rem;
+        .card_wrap {
+            width: 800px;
+            height: 65px;
+            padding: 0.8rem 1.5rem;
+            margin: auto;
+            background-color: rgba(234, 237, 242);
+            border-radius: 20px;
+            border: 1px solid rgb(0 0 0 / 3%);
+            display: flex;
+            align-items: center;
+            .sc_one {
+                text-transform: uppercase;
+                font-size: 1rem;
+            }
+            .tw {
+                height: 30px;
+                width: 1px;
+                background-color: rgb(0 0 0 / 3%);
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+            .intro {
+                font-weight: bold;
+                font-size: 18px;
+            }
+        }
+    }
+    .mg_top_card_lesson {
+        margin-top: 1.5rem;
+        .card_lesson {
+            width: 800px;
+            height: 180px;
+            padding-right: 0.5rem;
+            margin: auto;
+            background-color: white;
+            border-radius: 20px;
+            border: 1px solid rgba(216, 216, 216, 0.57);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 1rem;
+            .n_lesson {
+                width: 15%;
+                .wrap_lesson {
+                    text-align: center;
+                    border: 3px solid rgb(128 128 128 / 25%);
+                    height: 70px;
+                    width: 70px;
+                    border-radius: 50%;
+                    margin: auto;
+                    p {
+                        font-size: 25px;
+                        font-family: "Poppins", sans-serif;
+                        background-color: rgb(244 244 244);
+                        margin: 0.13rem;
+                        border-radius: 50%;
+                        width: 60px;
+                        height: 60px;
+                        line-height: 60px;
+                        position: relative;
+                    }
+                    .fa-check {
+                        position: absolute;
+                        margin-top: -40px;
+                        font-size: 25px;
+                        margin-left: -10px;
+                        display: none;
+                    }
+                    &:hover {
+                        transition: 0.5s;
+                        p {
+                            display: none;
+                        }
+                        .fa-check {
+                            display: block;
+                            background-color: rgb(244 244 244);
+                            margin: 0.13rem;
+                            border-radius: 50%;
+                            width: 60px;
+                            height: 60px;
+                            line-height: 60px;
+                        }
+                    }
+                }
+            }
+            .desc_lesson {
+                width: 85%;
+                padding-bottom: 0.5rem;
+                h4 {
+                    font-size: 20px;
+                    color: rgba(34, 41, 47);
+                    letter-spacing: 0.02rem;
+                    font-family: "Cabin", sans-serif;
+                    line-height: 2;
+                }
+                p {
+                    font-family: "Poppins", sans-serif;
+                    color: rgba(61, 72, 82);
+                    line-height: 1.5;
+                    font-size: 0.9em;
+                    code {
+                        background-color: rgb(245 247 250);
+                        color: rgb(237 108 99);
+                        font-size: 11px;
+                        font-weight: 400;
+                        padding: 1px 2px 2px;
+                    }
+                }
+                .wrap_info {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 1rem;
+                    font-family: "Poppins", sans-serif;
+                    color: rgb(150 150 150);
+                    font-size: 10px;
+                    padding-right: 1rem;
+                    .info_lesson {
+                        .episode {
+                            text-transform: uppercase;
+                            margin-right: 0.5rem;
+                        }
+                        .fa-clock {
+                            margin-right: 0.3rem;
+                        }
+                    }
+                    .git {
+                        span {
+                            font-weight: bold;
+                            border: 1px solid rgb(128 128 128 / 52%);
+                            padding: 0.5rem;
+                            border-radius: 10px;
+                            &:hover {
+                                border: 1px solid rgb(0, 162, 255);
+                                color: rgb(0, 162, 255);
+                                transition: 0.5s;
+                                .fa-github {
+                                    color: rgb(0, 162, 255);
+                                }
+                            }
+                        }
+                        .fa-github {
+                            margin-right: 0.3rem;
+                        }
+                    }
                 }
             }
         }
